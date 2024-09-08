@@ -6,12 +6,17 @@ struct RewardView: View {
     private let adUnitID = "ca-app-pub-3940256099942544/1712485313"
 
     var body: some View {
-        Button("Click Here to Show Rewarded Ad") {
-            adManager.showAd()
-        }
-        .disabled(!adManager.isAdLoaded)
-        .onAppear {
-            adManager.loadAd(adUnitID: adUnitID)
+        VStack{
+            Text("This is reward Ad :q")
+                .padding()
+            
+            Button("Click here to show reward Ad") {
+                adManager.showAd()
+            }
+            .disabled(!adManager.isAdLoaded)
+            .onAppear {
+                adManager.loadAd(adUnitID: adUnitID)
+            }
         }
         .padding()
     }

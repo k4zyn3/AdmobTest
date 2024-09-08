@@ -1,11 +1,5 @@
-//
-//  AdmobTestApp.swift
-//  AdmobTest
-//
-//  Created by 湊日利 on 2024/09/08.
-//
-
 import SwiftUI
+import GoogleMobileAds
 
 @main
 struct AdmobTestApp: App {
@@ -13,5 +7,12 @@ struct AdmobTestApp: App {
         WindowGroup {
             ContentView()
         }
+    }
+}
+
+class AppDelegate: NSObject, UIApplicationDelegate {
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        GADMobileAds.sharedInstance().start(completionHandler: nil)
+        return true
     }
 }

@@ -1,21 +1,31 @@
-//
-//  ContentView.swift
-//  AdmobTest
-//
-//  Created by 湊日利 on 2024/09/08.
-//
-
 import SwiftUI
+import GoogleMobileAds
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        NavigationView{
+            VStack {
+                NavigationLink(destination: InterstitialView(), label:{
+                    Text("InterstitialView")
+                })
+                .padding()
+                
+                NavigationLink(destination: BannerView(), label:{
+                    Text("BannerView")
+                })
+                .padding()
+                
+                NavigationLink(destination: RewardView(), label:{
+                    Text("RewardView")
+                })
+                .padding()
+
+                
+                
+
+            }
+            .navigationTitle("Google Admob ツ")
         }
-        .padding()
     }
 }
 

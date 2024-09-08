@@ -1,22 +1,11 @@
-//
-//  BannerView.swift
-//  AdmobTest
-//
-//  Created by 湊日利 on 2024/09/08.
-//
-
-
 import SwiftUI
 import GoogleMobileAds
 
 struct BannerView: View {
     var body: some View {
         VStack {
-            Spacer()
-            
             Text("This is Banner Ad :)")
-            
-            Spacer()
+                .padding()
             
             AdBannerView(adUnitID: "ca-app-pub-3940256099942544/2934735716")
                 .frame(height: 70)

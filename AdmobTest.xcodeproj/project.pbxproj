@@ -14,6 +14,10 @@
 		1B52DC102C8DC8D300A01DB7 /* AdmobTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B52DC0F2C8DC8D300A01DB7 /* AdmobTestTests.swift */; };
 		1B52DC1A2C8DC8D300A01DB7 /* AdmobTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B52DC192C8DC8D300A01DB7 /* AdmobTestUITests.swift */; };
 		1B52DC1C2C8DC8D300A01DB7 /* AdmobTestUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B52DC1B2C8DC8D300A01DB7 /* AdmobTestUITestsLaunchTests.swift */; };
+		1B52DC2A2C8DD76900A01DB7 /* GoogleMobileAds in Frameworks */ = {isa = PBXBuildFile; productRef = 1B52DC292C8DD76900A01DB7 /* GoogleMobileAds */; };
+		1B52DC2E2C8DEF3700A01DB7 /* BannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B52DC2D2C8DEF3700A01DB7 /* BannerView.swift */; };
+		1B52DC312C8DF7A900A01DB7 /* RewardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B52DC302C8DF7A900A01DB7 /* RewardView.swift */; };
+		1B52DC332C8DFDD200A01DB7 /* InterstitialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B52DC322C8DFDD200A01DB7 /* InterstitialView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +48,10 @@
 		1B52DC152C8DC8D300A01DB7 /* AdmobTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AdmobTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B52DC192C8DC8D300A01DB7 /* AdmobTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdmobTestUITests.swift; sourceTree = "<group>"; };
 		1B52DC1B2C8DC8D300A01DB7 /* AdmobTestUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdmobTestUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		1B52DC2B2C8DD82B00A01DB7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		1B52DC2D2C8DEF3700A01DB7 /* BannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerView.swift; sourceTree = "<group>"; };
+		1B52DC302C8DF7A900A01DB7 /* RewardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardView.swift; sourceTree = "<group>"; };
+		1B52DC322C8DFDD200A01DB7 /* InterstitialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterstitialView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B52DC2A2C8DD76900A01DB7 /* GoogleMobileAds in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,8 +103,12 @@
 		1B52DBFD2C8DC8CD00A01DB7 /* AdmobTest */ = {
 			isa = PBXGroup;
 			children = (
-				1B52DBFE2C8DC8CD00A01DB7 /* AdmobTestApp.swift */,
 				1B52DC002C8DC8CD00A01DB7 /* ContentView.swift */,
+				1B52DC322C8DFDD200A01DB7 /* InterstitialView.swift */,
+				1B52DC2D2C8DEF3700A01DB7 /* BannerView.swift */,
+				1B52DC302C8DF7A900A01DB7 /* RewardView.swift */,
+				1B52DC2B2C8DD82B00A01DB7 /* Info.plist */,
+				1B52DBFE2C8DC8CD00A01DB7 /* AdmobTestApp.swift */,
 				1B52DC022C8DC8D200A01DB7 /* Assets.xcassets */,
 				1B52DC042C8DC8D200A01DB7 /* Preview Content */,
 			);
@@ -143,6 +156,9 @@
 			dependencies = (
 			);
 			name = AdmobTest;
+			packageProductDependencies = (
+				1B52DC292C8DD76900A01DB7 /* GoogleMobileAds */,
+			);
 			productName = AdmobTest;
 			productReference = 1B52DBFB2C8DC8CD00A01DB7 /* AdmobTest.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +231,9 @@
 				Base,
 			);
 			mainGroup = 1B52DBF22C8DC8CD00A01DB7;
+			packageReferences = (
+				1B52DC282C8DD76900A01DB7 /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */,
+			);
 			productRefGroup = 1B52DBFC2C8DC8CD00A01DB7 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -259,6 +278,9 @@
 			files = (
 				1B52DC012C8DC8CD00A01DB7 /* ContentView.swift in Sources */,
 				1B52DBFF2C8DC8CD00A01DB7 /* AdmobTestApp.swift in Sources */,
+				1B52DC332C8DFDD200A01DB7 /* InterstitialView.swift in Sources */,
+				1B52DC2E2C8DEF3700A01DB7 /* BannerView.swift in Sources */,
+				1B52DC312C8DF7A900A01DB7 /* RewardView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -425,6 +447,7 @@
 				DEVELOPMENT_TEAM = 2B944C4KZ8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AdmobTest/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -454,6 +477,7 @@
 				DEVELOPMENT_TEAM = 2B944C4KZ8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AdmobTest/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -588,6 +612,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1B52DC282C8DD76900A01DB7 /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/googleads/swift-package-manager-google-mobile-ads.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.8.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1B52DC292C8DD76900A01DB7 /* GoogleMobileAds */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1B52DC282C8DD76900A01DB7 /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */;
+			productName = GoogleMobileAds;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 1B52DBF32C8DC8CD00A01DB7 /* Project object */;
 }

@@ -1,10 +1,3 @@
-//
-//  AdmobTestTests.swift
-//  AdmobTestTests
-//
-//  Created by 湊日利 on 2024/09/08.
-//
-
 import XCTest
 @testable import AdmobTest
 
