@@ -19,10 +19,6 @@ struct ContentView: View {
                     Text("RewardView")
                 })
                 .padding()
-
-                
-                
-
             }
             .navigationTitle("Google Admob ツ")
         }
